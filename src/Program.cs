@@ -11,7 +11,7 @@ namespace Prefab
             var userInput = Console.ReadLine();
 
             var system = new TheSystem(new CalculationService());
-            var output = system.ProcessUserInput(userInput);
+            var output = system.ProcessUserInput(userInput); // bla
 
             Console.WriteLine($"The output of the system is: {output}");
             Console.ReadLine();
