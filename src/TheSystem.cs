@@ -15,7 +15,7 @@ namespace Prefab
         {
             if (int.TryParse(userInput, out var inputNumber))
             {
-                var output = _calculationService.GetSquare(inputNumber);
+                var output = _calculationService.CalculateSquare(inputNumber);
                 return $"The square of {userInput} is {output}";
             }
             else

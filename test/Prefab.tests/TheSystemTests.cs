@@ -14,7 +14,7 @@ namespace Prefab.tests
         {
             // Arrange
             var mockSquareCalculator = new Mock<ICalculationService>();
-            mockSquareCalculator.Setup(c => c.GetSquare(It.IsAny<int>())).Returns(16);
+            mockSquareCalculator.Setup(c => c.CalculateSquare(It.IsAny<int>())).Returns(16);
             var system = new TheSystem(mockSquareCalculator.Object);
 
             // Act
@@ -29,7 +29,7 @@ namespace Prefab.tests
         {
             // Arrange
             var mockSquareCalculator = new Mock<ICalculationService>();
-            mockSquareCalculator.Setup(c => c.GetSquare(It.IsAny<int>())).Returns(16);
+            mockSquareCalculator.Setup(c => c.CalculateSquare(It.IsAny<int>())).Returns(16);
             var system = new TheSystem(mockSquareCalculator.Object);
 
             // Act

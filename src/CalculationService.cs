@@ -6,7 +6,7 @@ namespace Prefab
 {
     public class CalculationService : ICalculationService
     {
-        public int GetSquare(int input)
+        public int CalculateSquare(int input)
         {
             return checked(input * input);
         }

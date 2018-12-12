@@ -15,7 +15,7 @@ namespace Prefab.tests
             var expectedOutput = 16;
 
             // Act
-            var output = calculationService.GetSquare(input);
+            var output = calculationService.CalculateSquare(input);
 
             // Assert
             Assert.AreEqual(expectedOutput, output, $"The square of {input} should be {expectedOutput}!");
@@ -30,7 +30,7 @@ namespace Prefab.tests
             var input = int.MaxValue;
 
             // Act
-            var output = calculationService.GetSquare(input);
+            var output = calculationService.CalculateSquare(input);
         }
     }
 }
