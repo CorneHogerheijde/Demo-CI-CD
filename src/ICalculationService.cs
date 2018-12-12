@@ -6,6 +6,6 @@ namespace Prefab
 {
     public interface ICalculationService
     {
-        int GetSquare(int input);
+        int CalculateSquare(int input);
     }
 }
